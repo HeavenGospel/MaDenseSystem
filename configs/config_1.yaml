@@ -1,0 +1,22 @@
+# 交易所配置
+exchange_name: "okx"  # 交易所名称, 与使用哪个交易所有关
+exchange_params:  # 交易所参数
+  id: "okx1"  # 交易所ID, 与使用哪个交易所无关
+  proxies:  # 代理
+    http: "http://127.0.0.1:7890"
+    https: "http://127.0.0.1:7890"
+
+symbol: "BTC/USDT"  # 交易对名称
+timeframe: "15m"  # 时间间隔
+
+main_range: 10  # 主区间长度
+compare_range: 25  # 对比区间长度
+ma:
+  sma:  # 设置简单移动均线的周期
+    sma1: 20
+    sma2: 60
+    sma3: 120
+  ema:  # 设置指数移动均线的周期
+    ema1: 20
+    ema2: 60
+    ema3: 120
