@@ -9,7 +9,7 @@ exchange_params:  # 交易所参数
 symbol: "BTC/USDT"  # 交易对名称
 timeframe: "15m"  # 时间间隔
 
-main_range: 10  # 主区间长度
+main_range: 5  # 主区间长度
 compare_range: 25  # 对比区间长度
 ma:
   sma:  # 设置简单移动均线的周期
@@ -20,3 +20,14 @@ ma:
     ema1: 20
     ema2: 60
     ema3: 120
+  
+fuzzy:
+  distance:
+    step1: 60
+    step2: 300
+  cross:
+    step1: 0
+    step2: 3
+  slope:
+    step1: 15
+    step2: 30
